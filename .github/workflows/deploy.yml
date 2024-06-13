@@ -21,4 +21,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/test:2.0
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/latest
+        context: ../express-app
