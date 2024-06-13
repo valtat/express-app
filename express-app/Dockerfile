@@ -1,4 +1,6 @@
-FROM node:16
+FROM node:alpine
+
+WORKDIR /usr/app
 
 COPY . .
 
