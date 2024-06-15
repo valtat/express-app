@@ -10,10 +10,7 @@ services:
     
     
   express-app:
-    build:
-      context: ./express-app
+    image: valeriot015/express-app:latest
     ports:
       - 8080:8080
     container_name: express-app
-    labels:
-      - "com.centurylinklabs.watchtower.enable=true"
