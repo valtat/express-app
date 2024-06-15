@@ -23,4 +23,4 @@ jobs:
         context: ./express-app
         file: ./express-app/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/express-app
