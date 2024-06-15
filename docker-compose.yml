@@ -6,6 +6,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     container_name: watchtower
+    command: express-app
+    
     
   express-app:
     build:
@@ -13,3 +15,5 @@ services:
     ports:
       - 8080:8080
     container_name: express-app
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
